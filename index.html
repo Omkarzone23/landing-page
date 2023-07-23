@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Starbucks Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+    </head>
+    <body>
+        <section>
+            <div class="circle">
+
+            </div>
+            <header>
+                <a href="#"><img src="images/logo.png" alt=""></a>
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">App</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textbox">
+                    <h2>Love at First Sip!</h2>
+                    <p>Coffee shops are well known as a place where you can get any types of coffee and related coffee beverages any time you want and need. Many coffee houses nowadays are serving also some food, snacks and desserts.</p>
+                    <a href="#">Learn More</a>
+                 </div>
+                 <div class="imgbox">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="images/image1.png" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="images/image2.png" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="images/image3" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="images/Starbucks-Coffee-PNG-Free-Image-removebg-preview.png" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="images/image5.png" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="images/image6.png" />
+                          </div>
+                          
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    
+                 </div>
+            </div>
+          
+        </section>
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              effect: "coverflow",
+              grabCursor: true,
+              centeredSlides: true,
+              slidesPerView: "auto",
+              coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+              },
+              loop: true
+            });
+          </script>
+    </body>
+</html>
